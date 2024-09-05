@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %} Product form{% endblock  %}
+{% block content %}
+
+<h1 class="text-center">Product From</h1>
+<form method="POST" class="jumbotron">
+    {% csrf_token %}
+    {{form}}
+    <br>
+    <button class = "btn btn-success btn-block" type="submit">Save Products</button>
+</form>
+{% endblock  %}

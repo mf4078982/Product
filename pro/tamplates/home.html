@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %} home {% endblock  %}
+{% block content %}
+<div class="div jombotron text-center">
+    <h1 class="display-4">Welcome to my 
+    Inventory Managment System
+    </h1>
+    <p class="lead">
+        Manage your products efficiently and easily
+    </p>
+    <hr class="my-4">
+    <p>
+        Use the navigation bar to add, view,update or delete products.</
+    </p>
+        <a href="{% url 'product_list'%}" class="btn btn-primary btn-lg" rel="button">View Products
+
+    </a>
+</div>
+{% endblock %}
